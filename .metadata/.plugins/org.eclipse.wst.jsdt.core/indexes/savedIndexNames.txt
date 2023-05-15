@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+D:\Dev\sts-bundle\work_spring\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3308598854.index

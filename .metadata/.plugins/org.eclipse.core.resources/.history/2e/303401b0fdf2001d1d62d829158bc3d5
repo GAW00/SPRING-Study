@@ -1,0 +1,6 @@
+// 도메인 역순(패키지 : spring_2_1 프로젝트 이름 포함)
+package com.lgy.spring_2_1;
+
+public class Calculation {
+
+}
