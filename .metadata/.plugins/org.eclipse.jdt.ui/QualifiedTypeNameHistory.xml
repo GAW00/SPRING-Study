@@ -1,2 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.lgy.spring_2_1.Calculation"/>
+<fullyQualifiedTypeName name="com.lgy.spring_2_1.Rectangle"/>
+<fullyQualifiedTypeName name="com.lgy.spring_2_1.Circle"/>
+<fullyQualifiedTypeName name="com.lgy.spring_2_1.Draw"/>
+<fullyQualifiedTypeName name="com.lgy.spring_2_2.SeasonDollar"/>
+<fullyQualifiedTypeName name="com.lgy.spring_2_2.T_spring_ex2_2.Season"/>
+<fullyQualifiedTypeName name="com.lgy.spring_2_2.T_spring_ex2_2.Won2dollar"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex2_3.Three"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex2_3.DivAndRemains"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex2_4.Rectangle"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex2_4.Median"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex2_5.Multiple"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex2_5.Triangle"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex2_5.Asterisk"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex2_5.Capital"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex2_5.MyCalculator"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex2_5.Calculator"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex3_2.Rectangle"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex3_2.MyRectangle"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex3_3.Season"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+</qualifiedTypeNameHistroy>
