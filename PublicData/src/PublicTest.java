@@ -12,6 +12,7 @@ public class PublicTest {
 //			XML 문서에서 DOM 오브젝트 트리를 생성하는 parser를 얻을 수 있다
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 //			xml 파일을 파싱(해석)하는 객체
+//			XML 문서에서 DOM Document instance를 얻는다 - DocumentBuilder 클래스를 사용해 XML로부터 Document를 얻을 수 있다
 			DocumentBuilder parser = dbf.newDocumentBuilder();
 			
 			Document xmlDoc = null;
