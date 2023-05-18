@@ -22,6 +22,14 @@
 <fullyQualifiedTypeName name="com.lgy.spring_ex3_2.Rectangle"/>
 <fullyQualifiedTypeName name="com.lgy.spring_ex3_2.MyRectangle"/>
 <fullyQualifiedTypeName name="com.lgy.spring_ex3_3.Season"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex3_4.Won2Dollar"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex3_5.MyThree"/>
+<fullyQualifiedTypeName name="COM.LGY.SPRING_.DivAndRemains"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex3_6.DivAndRemains"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex3_6.MyDivAndRemains"/>
+<fullyQualifiedTypeName name="java.lang.Readable"/>
+<fullyQualifiedTypeName name="com.lgy.spring_ex3_7.Rectangle"/>
 </qualifiedTypeNameHistroy>
