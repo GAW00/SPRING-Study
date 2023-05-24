@@ -35,7 +35,7 @@ public class MainClass {
 //		private String adminPw;
 //		@# setEnvironment()
 //		@# afterPropertiesSet()
-		gctx.refresh();
+		gctx.refresh() ;
 		
 		AdminConnection adminConnection = gctx.getBean("adminConnection", AdminConnection.class);
 		System.out.println("admin ID : " + adminConnection.getAdminId());
