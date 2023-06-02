@@ -106,8 +106,9 @@ public class SampleController {
 	}
 	
 	@PostMapping("/info")
-	public void convert(@RequestBody MemberVO vo) {
+	public MemberVO convert(@RequestBody MemberVO vo) {
 		log.debug("@# vo ===> " + vo);
+		return vo;
 	}
 	
 }

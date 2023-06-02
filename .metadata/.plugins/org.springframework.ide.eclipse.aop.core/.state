@@ -6,10 +6,10 @@
 <aop-project name="spring_13_3"/>
 <aop-project name="spring_14_2"/>
 <aop-project name="spring_2_1"/>
-<aop-project name="spring_ex5_1"/>
-<aop-project name="spring_ex2_4"/>
-<aop-project name="spring_ex3_3"/>
 <aop-project name="spring_ex12_3"/>
+<aop-project name="spring_ex3_3"/>
+<aop-project name="spring_ex2_4"/>
+<aop-project name="spring_ex5_1"/>
 <aop-project name="spring_11_11"/>
 <aop-project name="spring_12_3"/>
 <aop-project name="spring_13_2"/>
