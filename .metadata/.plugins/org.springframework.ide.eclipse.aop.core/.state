@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="spring_15"/>
-<aop-project name="spring_8_3_2"/>
-<aop-project name="spring_12_4"/>
-<aop-project name="spring_13_3"/>
 <aop-project name="spring_14_2"/>
+<aop-project name="spring_13_3"/>
+<aop-project name="spring_12_4"/>
+<aop-project name="spring_8_3_2"/>
 <aop-project name="spring_2_1"/>
 <aop-project name="spring_ex12_3"/>
 <aop-project name="spring_ex3_3"/>
 <aop-project name="spring_ex2_4"/>
 <aop-project name="spring_ex5_1"/>
+<aop-project name="spring_mvc_board"/>
 <aop-project name="spring_11_11"/>
 <aop-project name="spring_12_3"/>
 <aop-project name="spring_13_2"/>
@@ -119,5 +120,6 @@
 <aop-project name="spring_ex2_5"/>
 <aop-project name="spring_ex3_4"/>
 <aop-project name="spring_ex12_4"/>
+<aop-project name="spring_test_item"/>
 <aop-project name="spring_ex12_1A"/>
 </aop-reference-model>
