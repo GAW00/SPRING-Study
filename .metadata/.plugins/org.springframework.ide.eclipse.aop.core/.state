@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="spring_15"/>
-<aop-project name="spring_14_2"/>
-<aop-project name="spring_13_3"/>
-<aop-project name="spring_12_4"/>
 <aop-project name="spring_8_3_2"/>
+<aop-project name="spring_12_4"/>
+<aop-project name="spring_13_3"/>
+<aop-project name="spring_14_2"/>
 <aop-project name="spring_2_1"/>
 <aop-project name="spring_ex12_3"/>
 <aop-project name="spring_ex3_3"/>
@@ -49,6 +49,8 @@
 <aop-project name="spring_ex2_2"/>
 <aop-project name="spring_ex3_1"/>
 <aop-project name="spring_ex12_1"/>
+<aop-project name="spring_mvc_board_mybatis2"/>
+<aop-project name="spring_test_item_mybatis"/>
 <aop-project name="spring_test_member"/>
 <aop-project name="spring_8_2_2"/>
 <aop-project name="spring_8_3_1"/>
@@ -105,12 +107,14 @@
 <aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_ex10_1|3:src/main/resources/applicationCTX.xml|7:beans:6|8:graphic:17" bean-file="/spring_ex10_1/src/main/resources/applicationCTX.xml" bean-start-line="17" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_ex10_1/src/main/resources/applicationCTX.xml" source="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{LogAop.java[LogAop~loggerAop~QProceedingJoinPoint;" source-start-line="14" target="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{Graphic.java[Graphic~setCapRank~I" target-start-line="20"/>
 </aspect-definition>
 </aop-project>
+<aop-project name="spring_mvc_board_mybatis"/>
 <aop-project name="spring_10_1"/>
 <aop-project name="spring_5_1"/>
 <aop-project name="spring_14_1_2"/>
 <aop-project name="spring_ex6_3"/>
 <aop-project name="spring_ex8_1"/>
 <aop-project name="spring_ex3_6"/>
+<aop-project name="spring_test_member_jdbc_Teacher"/>
 <aop-project name="spring_12_2"/>
 <aop-project name="spring_13_1"/>
 <aop-project name="spring_4_1"/>
@@ -118,6 +122,7 @@
 <aop-project name="spring_ex6_2"/>
 <aop-project name="spring_ex3_5"/>
 <aop-project name="spring_test_item_jdbc"/>
+<aop-project name="spring_test_member_mybatis"/>
 <aop-project name="spring_16"/>
 <aop-project name="spring_12_1"/>
 <aop-project name="spring_3_1"/>
