@@ -7,7 +7,7 @@
     <insert id="write" parameterType="hashmap">
     	insert into item(name, price, description) values(#{name}, #{price}, #{description})
     </insert>
-    <select id="contentView" resultType="com.lgy.spring_test_item_mybatis.dto.ItemDto">
+    <select id="contentView" resultType="com.lgy.spring_test_item_std.dto.ItemDto">
         select name, price, description from item
     </select>
 

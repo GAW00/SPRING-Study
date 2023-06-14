@@ -33,28 +33,21 @@ public class MemController {
 	public String login_yn(HttpServletRequest request, Model model) {
 		log.info("@# login_yn");
 		
-		int re;
 		MemDao dao = sqlSession.getMapper(MemDao.class);		
 		
 		ArrayList<MemDto> dto = dao.loginYn(request.getParameter("mem_uid")
 				  						  , request.getParameter("mem_pwd"));
 		if(dto.isEmpty()) { // 조회가 안된 경우
-			re = -1;
+			return "redirect:login";
 		}
 		else {
 			if(request.getParameter("mem_pwd").equals(dto.get(0).getMem_pwd())) {
-				re = 1;
+				return "redirect:login_ok";
 			}
 			else {
-				re = 0;
+				return "redirect:login";
 			}
 		}
-//		아이디와 비밀번호가 일치
-		if (re == 1) {
-			return "redirect:login_ok";
-		}
-		
-		return "redirect:login";
 	}
 		
 	@RequestMapping("/login_ok")

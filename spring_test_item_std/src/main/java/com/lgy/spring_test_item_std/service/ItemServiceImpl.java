@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.lgy.spring_test_item_std.dao.ItemDao;
 import com.lgy.spring_test_item_std.dto.ItemDto;
@@ -12,6 +13,7 @@ import com.lgy.spring_test_item_std.dto.ItemDto;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@Service
 public class ItemServiceImpl implements ItemService{
 	@Autowired
 	private SqlSession sqlSession;

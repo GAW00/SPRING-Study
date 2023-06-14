@@ -44,7 +44,7 @@ public class ItemController {
 //		ItemDao dao = sqlSession.getMapper(ItemDao.class);
 //		model.addAttribute("content_view", dao.contentView());
 		ArrayList<ItemDto> dtos = service.contentView();
-		model.addAttribute("contentView", dtos);
+		model.addAttribute("content_view", dtos);
 		
 		return "content_view";
 	}

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="spring_15"/>
-<aop-project name="spring_14_2"/>
-<aop-project name="spring_13_3"/>
-<aop-project name="spring_12_4"/>
 <aop-project name="spring_8_3_2"/>
+<aop-project name="spring_12_4"/>
+<aop-project name="spring_13_3"/>
+<aop-project name="spring_14_2"/>
 <aop-project name="spring_2_1"/>
 <aop-project name="spring_ex12_3"/>
 <aop-project name="spring_ex3_3"/>
@@ -16,6 +16,7 @@
 <aop-project name="spring_13_2"/>
 <aop-project name="spring_6_4"/>
 <aop-project name="spring_7_3"/>
+<aop-project name="spring_test_item_std"/>
 <aop-project name="spring_9_1">
 <aspect-definition advice-class-name="com.lgy.spring_9_1.LogAop" advice-method-name="loggerAop" advice-type="AROUND" aspect-end-line-number="13" aspect-name="logAop" aspect-start-line-number="13" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/spring_9_1/src/main/resources/applicationCTX.xml" pointcut-expression="within(com.lgy.spring_9_1.*)" proxy-target-class="false">
 <aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_9_1|3:src/main/resources/applicationCTX.xml|7:beans:6|8:student:17" bean-file="/spring_9_1/src/main/resources/applicationCTX.xml" bean-start-line="17" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_9_1/src/main/resources/applicationCTX.xml" source="=spring_9_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_9_1{LogAop.java[LogAop~loggerAop~QProceedingJoinPoint;" source-start-line="8" target="=spring_9_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_9_1{Student.java[Student~setGradeNum~I" target-start-line="30"/>
@@ -39,6 +40,7 @@
 <aop-project name="spring_ex2_3"/>
 <aop-project name="spring_ex3_2"/>
 <aop-project name="spring_ex12_2"/>
+<aop-project name="spring_mvc_board_std"/>
 <aop-project name="spring_8_2_1"/>
 <aop-project name="spring_12_6"/>
 <aop-project name="spring_7_2"/>

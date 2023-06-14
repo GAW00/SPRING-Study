@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.lgy.spring_test_item.dao.ItemDao"/>
-<fullyQualifiedTypeName name="lombok.extern.java.Log"/>
-<fullyQualifiedTypeName name="com.lgy.spring_test_item.command.ItemWriteService"/>
-<fullyQualifiedTypeName name="javax.naming.Context"/>
-<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
-<fullyQualifiedTypeName name="lombok.Data"/>
-<fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="com.lgy.spring_test_item.dto.MemDto"/>
@@ -22,7 +15,6 @@
 <fullyQualifiedTypeName name="com.lgy.spring_test_member_Teacher.dao.MemDao"/>
 <fullyQualifiedTypeName name="com.lgy.spring_test_member_Teacher.service.MemLoginService"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.PreparedStatementSetter"/>
-<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 <fullyQualifiedTypeName name="com.lgy.spring_mvc_board_jdbc.dao.BDao"/>
 <fullyQualifiedTypeName name="com.lgy.spring_mvc_board_jdbc.dto.BDto"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
@@ -50,14 +42,22 @@
 <fullyQualifiedTypeName name="com.lgy.spring_test_member_jdbc_Teacher.service.MemService"/>
 <fullyQualifiedTypeName name="com.lgy.spring_test_member_jdbc_Teacher.service.MWriteService"/>
 <fullyQualifiedTypeName name="com.lgy.spring_test_member_jdbc_Teacher.service.MemLoginService"/>
-<fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
 <fullyQualifiedTypeName name="com.lgy.spring_mvc_board_mybatis.dto.BDto"/>
 <fullyQualifiedTypeName name="com.lgy.spring_mvc_board_mybatis.dao.IBDao"/>
 <fullyQualifiedTypeName name="com.lgy.spring_test_item_mybatis.dto.ItemDto"/>
 <fullyQualifiedTypeName name="com.lgy.spring_test_item_mybatis.dao.ItemDao"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.lgy.spring_test_member_mybatis.dao.MemDao"/>
 <fullyQualifiedTypeName name="com.lgy.spring_test_member_mybatis.dto.MemDto"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="com.lgy.spring_mvc_board_std.service.BService"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.lgy.spring_mvc_board_std.dto.BDto"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.lgy.spring_test_item_std.service.ItemService"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.lgy.spring_test_item_std.dto.ItemDto"/>
 </qualifiedTypeNameHistroy>
