@@ -96,6 +96,15 @@ public class BServiceImpl implements BService{
 		log.info("@# BServiceImpl.delete() end");
 	}
 
+	@Override
+	public int getTotalCount() {
+		log.info("@# BServiceImpl.getTotalCount()");
+		
+		IBDao dao = sqlSession.getMapper(IBDao.class);
+		
+		return dao.getTotalCount();
+	}
+
 }
 
 
