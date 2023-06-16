@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="spring_15"/>
-<aop-project name="spring_14_2"/>
-<aop-project name="spring_13_3"/>
-<aop-project name="spring_12_4"/>
 <aop-project name="spring_8_3_2"/>
+<aop-project name="spring_12_4"/>
+<aop-project name="spring_13_3"/>
+<aop-project name="spring_14_2"/>
 <aop-project name="spring_2_1"/>
 <aop-project name="spring_paging2"/>
 <aop-project name="spring_ex12_3"/>
@@ -64,6 +64,7 @@
 <aop-project name="spring_14_3"/>
 <aop-project name="spring_7_1"/>
 <aop-project name="spring_6_2"/>
+<aop-project name="spring_paging3"/>
 <aop-project name="spring_mvc_board_jdbc"/>
 <aop-project name="spring_ex8_3"/>
 <aop-project name="spring_ex6_5"/>
