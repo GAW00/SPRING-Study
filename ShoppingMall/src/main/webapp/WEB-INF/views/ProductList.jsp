@@ -15,13 +15,18 @@
 			<td>상품 가격</td>
 			<td>상품 정보</td>
 		</tr>
-		<c:forEach items="${list}" var="dto">
+		<c:forEach items="${ProductList}" var="dto">
+			<tr>
+				<td colspan="5">
+					<img src=${dto.proimg} alt="제품사진" width="200" height="200">
+				<td>
+			</tr>
 			<tr>
 				<td>${dto.procode}</td>
 				<td>${dto.catecode}</td>
 <%-- 				<td>${dto.btitle}</td> --%>
 				<td>
-					<a href="content_view?procode=${dto.procode}">${dto.proname}</a>
+					<a href="ProductView?procode=${dto.procode}">${dto.proname}</a>
 				</td>
 				<td>${dto.proprice}</td>
 				<td>${dto.proinfo}</td>

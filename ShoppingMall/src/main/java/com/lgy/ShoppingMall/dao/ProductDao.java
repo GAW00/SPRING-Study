@@ -13,6 +13,6 @@ ProudctDao 인터페이스
   박동명                      23-06-16             
 ===========================================================*/
 //	public ArrayList<ProductDto> list();
-	public ArrayList<ProductDto> list(HashMap<String, String> param);
-	public ProductDto contentView(HashMap<String, String> param);
+	public ArrayList<ProductDto> ProductList(HashMap<String, String> param);
+	public ProductDto ProductView(HashMap<String, String> param);
 }

@@ -43,6 +43,7 @@
 <aop-project name="spring_ex3_2"/>
 <aop-project name="spring_ex12_2"/>
 <aop-project name="spring_mvc_board_std"/>
+<aop-project name="ShoppingMall"/>
 <aop-project name="spring_8_2_1"/>
 <aop-project name="spring_12_6"/>
 <aop-project name="spring_7_2"/>
@@ -125,6 +126,7 @@
 <aop-project name="spring_13_1"/>
 <aop-project name="spring_4_1"/>
 <aop-project name="spring_3_2"/>
+<aop-project name="spring_join_resultmap"/>
 <aop-project name="spring_ex6_2"/>
 <aop-project name="spring_ex3_5"/>
 <aop-project name="spring_test_item_jdbc"/>

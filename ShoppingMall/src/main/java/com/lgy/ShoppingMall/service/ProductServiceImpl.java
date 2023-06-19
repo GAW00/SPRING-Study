@@ -21,26 +21,26 @@ public class ProductServiceImpl implements ProductService{
 	 
 	@Override
 //	public ArrayList<ProductDto> list() {
-	public ArrayList<ProductDto> list(HashMap<String, String> param) {
-		log.info("@# BServiceImpl.list() start");
+	public ArrayList<ProductDto> ProductList(HashMap<String, String> param) {
+		log.info("@# BServiceImpl.ProductList() start");
 		
 		ProductDao dao = sqlSession.getMapper(ProductDao.class);
 //		ArrayList<ProductDto> list = dao.list();
-		ArrayList<ProductDto> list = dao.list(param);
+		ArrayList<ProductDto> ProductList = dao.ProductList(param);
 		
-		log.info("@# BServiceImpl.list() end");
+		log.info("@# BServiceImpl.ProductList() end");
 		
-		return list;
+		return ProductList;
 	}
 
 	@Override
-	public ProductDto contentView(HashMap<String, String> param) {
-		log.info("@# BServiceImpl.contentView() start");
+	public ProductDto ProductView(HashMap<String, String> param) {
+		log.info("@# BServiceImpl.ProductView() start");
 		
 		ProductDao dao = sqlSession.getMapper(ProductDao.class);
-		ProductDto dto = dao.contentView(param);
+		ProductDto dto = dao.ProductView(param);
 		
-		log.info("@# BServiceImpl.contentView() end");
+		log.info("@# BServiceImpl.ProductView() end");
 		
 		return dto;
 	}

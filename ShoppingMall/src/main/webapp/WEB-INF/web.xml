@@ -40,7 +40,7 @@
   작성자   |    개발 및 수정 일자    |    수정 내용
   박동명          23-06-16            
 =========================================================================================== -->
-				<multipart-config>
+		<multipart-config>
 <!-- 			파일 저장 위치 -->
 <!-- 			<location>C:\\upload\\temp3</location> -->
 			<location>D:\\Dev\\upload</location>

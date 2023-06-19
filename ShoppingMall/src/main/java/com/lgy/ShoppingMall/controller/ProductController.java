@@ -28,16 +28,16 @@ public class ProductController {
 		return "main";
 	}
 	
-	@RequestMapping("/list")
+	@RequestMapping("/ProductList")
 //	public String list(Model model) {
-	public String list(@RequestParam HashMap<String, String> param, Model model) {
-		log.info("@# BController.list");
+	public String ProductList(@RequestParam HashMap<String, String> param, Model model) {
+		log.info("@# BController.ProductList");
 		
 //		ArrayList<ProductDto> list = service.list();
-		ArrayList<ProductDto> list = service.list(param);
-		model.addAttribute("list", list);
+		ArrayList<ProductDto> ProductList = service.ProductList(param);
+		model.addAttribute("ProductList", ProductList);
 		
-		return "list";
+		return "ProductList";
 	}
 	
 //	@RequestMapping("/write")
@@ -61,15 +61,15 @@ public class ProductController {
 //		return "write_view";
 //	}
 //	
-	@RequestMapping("/content_view")
+	@RequestMapping("/ProductView")
 //	public String content_view(HttpServletRequest request, Model model) {
-	public String content_view(@RequestParam HashMap<String, String> param, Model model) {
-		log.info("@# BController.content_view");
+	public String ProductView(@RequestParam HashMap<String, String> param, Model model) {
+		log.info("@# BController.ProductView");
 		
-		ProductDto dto = service.contentView(param);
-		model.addAttribute("content_view", dto);
+		ProductDto dto = service.ProductView(param);
+		model.addAttribute("ProductView", dto);
 		
-		return "content_view";
+		return "ProductView";
 	}
 	
 //	@RequestMapping("/modify")

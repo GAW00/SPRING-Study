@@ -165,6 +165,8 @@ D:\Dev\sts-bundle\work_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsea
 \spring_10_1\src\main\java
 D:\Dev\sts-bundle\work_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1725174530.index
 \spring_6_1\src\main\java
+D:\Dev\sts-bundle\work_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1466786459.index
+\spring_join\src\main\java
 D:\Dev\sts-bundle\work_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2139437197.index
 \spring_13_3\src\main\java
 D:\Dev\sts-bundle\work_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3359087385.index
@@ -185,6 +187,8 @@ D:\Dev\sts-bundle\work_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsea
 \sprint_6_1\src\main\java
 D:\Dev\sts-bundle\work_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\834147711.index
 \spring_ex3_8\src\main\java
+D:\Dev\sts-bundle\work_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\670957991.index
+\spring_join_resultmap\src\main\java
 D:\Dev\sts-bundle\work_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2418025356.index
 \spring_ex6_4\src\main\java
 D:\Dev\sts-bundle\work_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2140310506.index
