@@ -12,11 +12,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class NoticeDto {
-	private int noticode; //�۹�ȣ
-	private String notiauth; //�ۼ���
-	private String notititle; //������
-	private String noticont; //�۳���
-	private Timestamp notidate; //�ۼ���¥
-	private int notihit;
-	private String notipwd;
+	private int noticode; 
+	private String notiauth; 
+	private String notititle; 
+	private String noticont; 
+	private Timestamp notidate;
 }

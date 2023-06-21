@@ -7,42 +7,81 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.lgy.ShoppingMall.dao.*;
-import com.lgy.ShoppingMall.dto.*;
+import com.lgy.ShoppingMall.dao.ProductDao;
+import com.lgy.ShoppingMall.dto.CategoryDto;
+import com.lgy.ShoppingMall.dto.ProductDto;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Service("ProductService")
 public class ProductServiceImpl implements ProductService{
-	@Autowired
-	private SqlSession sqlSession;
 	
-	 
+	@Autowired
+	private SqlSession sqlsession;
+	
 	@Override
-//	public ArrayList<ProductDto> list() {
-	public ArrayList<ProductDto> ProductList(HashMap<String, String> param) {
-		log.info("@# BServiceImpl.ProductList() start");
+	public ArrayList<CategoryDto> category() {
+		log.info("@# ProductServiceImpl.category() start");
 		
-		ProductDao dao = sqlSession.getMapper(ProductDao.class);
-//		ArrayList<ProductDto> list = dao.list();
-		ArrayList<ProductDto> ProductList = dao.ProductList(param);
+		ProductDao dao = sqlsession.getMapper(ProductDao.class);
+		ArrayList<CategoryDto> category = dao.category();
 		
-		log.info("@# BServiceImpl.ProductList() end");
+		log.info("@# ProductServiceImpl.category() end");
 		
-		return ProductList;
+		return category;
 	}
 
 	@Override
-	public ProductDto ProductView(HashMap<String, String> param) {
-		log.info("@# BServiceImpl.ProductView() start");
+	public void register(HashMap<String, String> param) {
+		log.info("@# ProductServiceImpl.register() start");
 		
-		ProductDao dao = sqlSession.getMapper(ProductDao.class);
-		ProductDto dto = dao.ProductView(param);
+		ProductDao dao = sqlsession.getMapper(ProductDao.class);
+		dao.register(param);
 		
-		log.info("@# BServiceImpl.ProductView() end");
+		log.info("@# ProductServiceImpl.register() end");
+	}
+
+	@Override
+	public ArrayList<ProductDto> productlist() {
+		log.info("@# ProductServiceImpl.productlist() start");
 		
+		ProductDao dao = sqlsession.getMapper(ProductDao.class);
+		ArrayList<ProductDto> productlist = dao.productlist();
+		
+		log.info("@# ProductServiceImpl.productlist() end");
+		return null;
+	}
+
+	@Override
+	public ProductDto productView(HashMap<String, String> param) {
+		log.info("@# ProductServiceImpl.productView() start");
+		
+		ProductDao dao = sqlsession.getMapper(ProductDao.class);
+		ProductDto dto = dao.productView(param);
+		
+		log.info("@# ProductServiceImpl.productView() end");
 		return dto;
+	}
+
+	@Override
+	public void productModify(HashMap<String, String> param) {
+		log.info("@# ProductServiceImpl.productModify() start");
+		
+		ProductDao dao = sqlsession.getMapper(ProductDao.class);
+		dao.productModify(param);
+		
+		log.info("@# ProductServiceImpl.productModify() end");
+	}
+
+	@Override
+	public void productDelete(HashMap<String, String> param) {
+		log.info("@# ProductServiceImpl.productDelete() start");
+		
+		ProductDao dao = sqlsession.getMapper(ProductDao.class);
+		dao.productDelete(param);
+		
+		log.info("@# ProductServiceImpl.productDelete() end");
 	}
 	
 }

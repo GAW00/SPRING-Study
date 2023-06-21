@@ -1,36 +1,62 @@
-<!-- ======================================================== 
-ProudctDao.xml
-각 로직이 사용할 sql
-  개발자   |   수정자   |    개발 및 수정 일자    |    수정 내용
-  박동명       박동명           23-06-19           select 요소 추가
-===========================================================-->
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
+    
 <mapper namespace="com.lgy.ShoppingMall.dao.ProductDao">
 
-<!--     <select id="list" resultType="com.lgy.ShoppingMall.dto.ProductDto"> -->
-    <select id="ProductList" parameterType="hashmap" resultType="com.lgy.ShoppingMall.dto.ProductDto">
-        select procode, catecode, proname, proprice, prosale, proinfo, proyn, proqty, prothumb, proimg from product where catecode=#{catecode}
-    </select>
-    
-    <select id="ProductView" parameterType="hashmap" resultType="com.lgy.ShoppingMall.dto.ProductDto">
-        select procode, catecode, proname, proprice, prosale, proinfo, proyn, proqty, prothumb, proimg from product where procode=#{procode}
-    </select>
-    
+<!-- 카테고리 호출 -->
+	<select id="category" resultType="com.lgy.ShoppingMall.dto.ProductDto">
+		select
+			level, cateName, cateCode, cateCodeRef
+		from category
+	    	start with cateCodeRef is null connect by prior cateCode = cateCodeRef
+	</select>
+
+	<!-- 상품 등록 --> 
+<!-- 	쿼리 확인 안됨 -->
+	<insert id="register" parameterType="hashmap">   		 		
+	 insert into PRODUCT (proCode, cateCode, proName, proPrice, proSale, proInfo, 
+								proYN, proQty, proThumb, proImg)
+	   		values (PRODUCT_SEQ.NEXTVAL, #{cateCode}, #{proName}, #{proPrice}, #{proSale}, #{proInfo},
+	   		 		#{proYN}, #{proQty}, #{proThumb}, #{proImg})
+	</insert>
+ 
+	<!-- 상품 목록 -->	
+	<select id="productlist" resultType="com.lgy.ShoppingMall.dto.ProductDto" parameterType="hashmap">
+		select
+			proCode, proName, cateCode, proPrice, proQty, proInfo, proImg
+	    from PRODUCT
+	        order by proCode desc
+	</select>
+	
+	<!-- 상품 조회 + 카테고리 조인-->
+	<select id="productView" resultType="com.lgy.ShoppingMall.dto.ProductDto" parameterType="hashmap">
+	    SELECT P.PROCODE, P.CATECODE, P.PRONAME, P.PROPRICE, P.PROSALE, P.PROINFO, P.PROYN, P.PROQTY, P.PROTHUMB, P.PROIMG, C.CATENAME, C.CATECODEREF
+	  	 FROM PRODUCT P
+	  		  INNER JOIN CATEGORY C ON P.CATECODE = C.CATECODE
+	   	 WHERE P.PROCODE = #{proCode}
+	</select>
+	
+	<!-- 상품 수정 -->
+	<update id="productModify" parameterType="hashmap">
+		update PRODUCT
+		    set
+		        proName = #{proName},
+		        cateCode = #{cateCode},
+		        proPrice = #{proPrice}, 
+		        proQty = #{proQty},
+		        proInfo = #{proInfo},
+		        
+		        proImg = #{proImg},
+		        proThumb = #{proThumb}
+		        
+		    where proCode = ${proCode}
+	</update>
+	
+	<!-- 상품 삭제 -->
+	<delete id="productDelete" parameterType="hashmap">
+		delete from PRODUCT where proCode = #{proCode}
+	</delete>
+	 
 </mapper>
-
-
-
-<!-- 	private String procode; -->
-<!-- 	private String catecode; -->
-<!-- 	private String proname; -->
-<!-- 	private String proprice; -->
-<!-- 	private String proinfo; -->
-<!-- //	private String prothumb; -->
-<!-- //	private String proimg; -->
-
-
-
-

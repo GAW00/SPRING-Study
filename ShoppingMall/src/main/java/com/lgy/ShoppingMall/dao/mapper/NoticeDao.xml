@@ -8,28 +8,34 @@
 
     <!-- 글 목록을 가져오는 쿼리 -->
     <select resultType="com.lgy.ShoppingMall.dto.NoticeDto" id="list">
-        select noticode, notiauth, notititle, noticont, notidate, notihit from notice_board
+        select noticode, notiauth, notititle, noticont, notidate from notice
     </select>
 
     <!-- 글을 작성하는 쿼리 -->
     <insert id="write" parameterType="hashmap">
-		INSERT INTO notice_board(noticode, notiauth, notititle, noticont, notihit) VALUES
-    	 (NOTICE_BOARD_SEQ.NEXTVAL,#{notiauth},#{notititle},#{noticont},0)   
+<!-- 		INSERT INTO notice(noticode, notiauth, notititle, noticont) VALUES -->
+<!--     	 (NOTICE_SEQ.NEXTVAL,#{notiauth},#{notititle},#{noticont})    -->
+		INSERT INTO notice_board(noticode, notiauth, notititle, noticont) VALUES
+    	 (notice_board_SEQ.NEXTVAL,#{notiauth},#{notititle},#{noticont})   
     </insert>
 
     <!-- 글 내용을 조회하는 쿼리 -->
     <select resultType="com.lgy.ShoppingMall.dto.NoticeDto" id="contentView" parameterType="hashmap">
-		 select noticode, notiauth, notititle, noticont, notidate, notihit, notipwd from notice_board where noticode = #{noticode}
+<!-- 		 select noticode, notiauth, notititle, noticont, notidate from notice where noticode = #{noticode} -->
+		 select noticode, notiauth, notititle, noticont, notidate from notice_board where noticode = #{noticode}
     </select>
 
     <!-- 글을 수정하는 쿼리 -->
-    <update id="modify" parameterType="hashmap">
+    <update id="noticeModify" parameterType="hashmap">
+<!-- 		update notice set notiauth = #{notiauth}, notititle = #{notititle}, noticont = #{noticont} -->
+<!-- 		 where noticode = #{noticode}            -->
 		update notice_board set notiauth = #{notiauth}, notititle = #{notititle}, noticont = #{noticont}
 		 where noticode = #{noticode}           
     </update>
 
     <!-- 글을 삭제하는 쿼리 -->
-    <delete id="delete" parameterType="hashmap">
+    <delete id="noticeDelete" parameterType="hashmap">
+<!-- 		delete from notice where noticode = #{noticode} -->
 		delete from notice_board where noticode = #{noticode}
     </delete>
 

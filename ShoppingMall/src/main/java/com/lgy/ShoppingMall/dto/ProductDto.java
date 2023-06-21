@@ -4,25 +4,28 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/* ======================================================
-ProudctDto
-상품 정보를 나타내는 dto
-  개발자   |   수정자   |    개발 및 수정 일자    |    수정 내용
-  박동명       박동명           23-06-19           product 테이블 전속성 추가
-====================================================== */ 
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProductDto {
-	private int procode;
-	private int catecode;
-	private String proname;
-	private String proprice;
-	private String prosale;
-	private String proinfo;
-	private String proyn;
-	private int proqty;
-	private String prothumb;
-	private String proimg;
+	 private int proCode; //상품번호
+	 private int cateCode; //카테고리 코드
+	 private String proName; //상품이름
+	 private String proPrice; //상품가격
+	 private String proSale; //상품세일가
+	 private String proInfo; //상품정보
+	 private String proYN; //판매여부
+	 private int proQty; //판매수량
+	 private String proThumb; //상품썸네일
+	 private String proImg;	 // 상품상세이미지
 }
+//"PROCODE"	NUMBER(20)		NOT NULL,
+//"CATECODE"	NUMBER(20)		NOT NULL,
+//"PRONAME"	VARCHAR2(30)		NULL,
+//"PROPRICE"	VARCHAR2(30)		NULL,
+//"PROSALE"	VARCHAR2(30)		NULL,
+//"PROINFO"	VARCHAR2(500)		NULL,
+//"PROYN"	VARCHAR2(10)	DEFAULT 'Y'	NULL,
+//"PROQTY"	NUMBER(30, 0)		NULL,
+//"PROTHUMB"	VARCHAR2(500)		NULL,
+//"PROIMG"	VARCHAR2(500)		NULL

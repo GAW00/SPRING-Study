@@ -54,23 +54,23 @@ public class NoticeServiceImpl implements NoticeService{
 	}
 
 	@Override
-	public void modify(HashMap<String, String> param) {
-		log.info("@# BServiceImpl.modify() start");
+	public void noticeModify(HashMap<String, String> param) {
+		log.info("@# BServiceImpl.noticeModify() start");
 		
 		NoticeDao dao = sqlSession.getMapper(NoticeDao.class);
-		dao.modify(param);
+		dao.noticeModify(param);
 		
-		log.info("@# BServiceImpl.modify() end");
+		log.info("@# BServiceImpl.noticeModify() end");
 	}
 
 	@Override
-	public void delete(HashMap<String, String> param) {
-		log.info("@# BServiceImpl.delete() start");
+	public void noticeDelete(HashMap<String, String> param) {
+		log.info("@# BServiceImpl.noticeDelete() start");
 		
 		NoticeDao dao = sqlSession.getMapper(NoticeDao.class);
-		dao.delete(param);
+		dao.noticeDelete(param);
 		
-		log.info("@# BServiceImpl.delete() end");
+		log.info("@# BServiceImpl.noticeDelete() end");
 	}
 	
 }
