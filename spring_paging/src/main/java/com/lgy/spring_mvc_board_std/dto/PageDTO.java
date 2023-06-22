@@ -1,8 +1,10 @@
 package com.lgy.spring_mvc_board_std.dto;
 
 import lombok.Getter;
+import lombok.ToString;
 
 @Getter
+@ToString
 public class PageDTO {
 	//페이지번호가 10개씩 보이게 (1~10, 11~20)
 	private int startPage;//시작페이지: 1, 11
@@ -10,6 +12,18 @@ public class PageDTO {
 	private boolean prev, next;
 	private int total;
 	private Criteria cri;//화면에 출력 갯수
+	
+//	@Override
+//	public String toString() {
+//		String toStr = "@# startPage=>"+getStartPage()
+//					  +"@# endPage=>"+getEndPage()
+//					  +"@# prev=>"+prev
+//					  +"@# next=>"+next
+//					  +"@# total=>"+getTotal()
+//					  +"@# cri=>"+getCri()
+//					  ;
+//		return toStr;
+//	}
 	
 	public PageDTO(int total, Criteria cri) {
 		this.total = total;

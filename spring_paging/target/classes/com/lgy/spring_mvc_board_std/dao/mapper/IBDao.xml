@@ -10,7 +10,7 @@
     
     <select id="listWithPaging" resultType="com.lgy.spring_mvc_board_std.dto.BDto">
 <!--     <![CDATA[]]> : mybatis 에서 특수문자 인식 처리 -->
-<!-- 	order by bid desc : where rownum 뒤에 정렬 조건 추가해서 최신순 -->
+<!-- order by bid desc : WHERE ROWNUM 뒤에 정렬 조건 추가해서 최신순-->
     	<![CDATA[
 			SELECT bid, bname, btitle, bcontent, bdate, bhit 
 			from (SELECT rownum rn, bid, bname, btitle, bcontent, bdate, bhit 
@@ -22,24 +22,22 @@
 		]]>
     </select>
     
-<!--     *.일련번호 종류 -->
-<!--     1. 시퀀스 -->
-<!--     2. max + 1 -->
-<!--     3. 일련번호 테이블(종류 컬럼으로 구성) -->
-<!--     - 조회하고, update + 1 -->
-<!--     4. 날짜 + 일련번호(max + 1) -->
-<!--     ex> -->
-<!--     20230615001 -->
-<!--     20230615002 -->
-<!--     20230615003 -->
-    
-    
+<!-- *.일련번호 종류 -->
+<!-- 1.시퀀스 -->
+<!-- 2.max+1 -->
+<!-- 3.일련번호 테이블(종류 컬럼으로 구성) -->
+<!-- - 조회하고, update +1 -->
+<!-- 4.날짜+일련번호(max+1) -->
+<!-- 20230615001 -->
+<!-- 20230615002 -->
+<!-- 20230615003 -->
+
     <insert id="write" parameterType="hashmap">
 <!-- 		insert into mvc_board(bid, bname, btitle, bcontent, bhit) values -->
 <!-- 						(MVC_BOARD_SEQ.NEXTVAL,#{param1},#{param2},#{param3},0) -->
 		insert into mvc_board(bid, bname, btitle, bcontent, bhit) values
-						((select max(bid)+1 from mvc_board),#{bname},#{btitle},#{bcontent},0)
-<!-- 					select max(bid)+1 from mvc_board; -->
+						(MVC_BOARD_SEQ.NEXTVAL,#{bname},#{btitle},#{bcontent},0)
+<!-- SELECT max(bid)+1 FROM mvc_board : pl/sql 로 강제로 데이터 삽입시 시퀀스 깨져서 변경 -->
     </insert>
     
     <select id="contentView" parameterType="hashmap" resultType="com.lgy.spring_mvc_board_std.dto.BDto">
