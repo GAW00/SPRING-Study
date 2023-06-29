@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.lgy.spring_mvc_board_jdbc.service.BService"/>
 <fullyQualifiedTypeName name="com.lgy.spring_mvc_board_jdbc.util.Constant"/>
 <fullyQualifiedTypeName name="com.lgy.spring_mvc_board_jdbc.service.BListService"/>
 <fullyQualifiedTypeName name="com.lgy.spring_mvc_board_jdbc.service.BWriteService"/>
@@ -39,25 +38,26 @@
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.lgy.spring_test_member_std.dto.MemDto"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
-<fullyQualifiedTypeName name="lombok.Setter"/>
-<fullyQualifiedTypeName name="com.lgy.spring_mvc_board_std.dto.BDto"/>
-<fullyQualifiedTypeName name="com.lgy.spring_mvc_board_std.dto.Criteria"/>
-<fullyQualifiedTypeName name="lombok.Getter"/>
-<fullyQualifiedTypeName name="com.lgy.spring_mvc_board_std.dto.PageDTO"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.support.RedirectAttributes"/>
-<fullyQualifiedTypeName name="com.lgy.spring_mvc_board_std.dao.IBDao"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
 <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlInlineBinaryData"/>
 <fullyQualifiedTypeName name="lombok.Data"/>
-<fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
 <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
 <fullyQualifiedTypeName name="com.lgy.ShoppingMall.dto.ProductDto"/>
-<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.sql.Timestamp"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.lgy.spring_join.dto.EmpDto"/>
+<fullyQualifiedTypeName name="lombok.Setter"/>
+<fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+<fullyQualifiedTypeName name="com.lgy.spring_mvc_board_std.dao.IBDao"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.lgy.spring_mvc_board_std.dto.BDto"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.lgy.spring_mvc_board_std.dto.Criteria"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="com.lgy.spring_mvc_board_std.dto.PageDTO"/>
+<fullyQualifiedTypeName name="lombok.Getter"/>
 </qualifiedTypeNameHistroy>

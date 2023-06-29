@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="spring_15"/>
-<aop-project name="spring_12_4"/>
-<aop-project name="spring_13_3"/>
-<aop-project name="spring_14_2"/>
 <aop-project name="spring_8_3_2"/>
-<aop-project name="spring_2_1"/>
-<aop-project name="spring_paging2"/>
-<aop-project name="spring_ex12_3"/>
-<aop-project name="spring_ex2_4"/>
-<aop-project name="spring_ex3_3"/>
 <aop-project name="spring_ex5_1"/>
-<aop-project name="spring_mvc_board"/>
-<aop-project name="spring_11_11"/>
+<aop-project name="spring_ex3_3"/>
+<aop-project name="spring_ex2_4"/>
 <aop-project name="spring_paging"/>
-<aop-project name="spring_12_3"/>
-<aop-project name="spring_13_2"/>
 <aop-project name="spring_6_4"/>
 <aop-project name="spring_7_3"/>
 <aop-project name="spring_test_item_std"/>
@@ -39,20 +28,56 @@
 <aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_9_1|3:src/main/resources/applicationCTX.xml|7:beans:6|8:worker:24" bean-file="/spring_9_1/src/main/resources/applicationCTX.xml" bean-start-line="24" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_9_1/src/main/resources/applicationCTX.xml" source="=spring_9_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_9_1{LogAop.java[LogAop~loggerAop~QProceedingJoinPoint;" source-start-line="8" target="=spring_9_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_9_1{Worker.java[Worker~getName" target-start-line="13"/>
 </aspect-definition>
 </aop-project>
-<aop-project name="spring_ex12_2"/>
-<aop-project name="spring_ex2_3"/>
 <aop-project name="spring_ex3_2"/>
-<aop-project name="spring_mvc_board_std"/>
+<aop-project name="spring_ex2_3"/>
 <aop-project name="ShoppingMall"/>
-<aop-project name="spring_12_6"/>
+<aop-project name="spring_mvc_board_std"/>
 <aop-project name="spring_8_2_1"/>
-<aop-project name="spring_6_3"/>
 <aop-project name="spring_7_2"/>
+<aop-project name="spring_6_3"/>
 <aop-project name="spring_8_1"/>
+<aop-project name="spring_ex3_1"/>
+<aop-project name="spring_ex2_2"/>
+<aop-project name="spring_validation_2nd"/>
+<aop-project name="spring_8_3_1"/>
+<aop-project name="spring_8_2_2"/>
+<aop-project name="spring_7_1"/>
+<aop-project name="spring_6_2"/>
+<aop-project name="spring_test_member_Teacher"/>
+<aop-project name="spring_ex2_1"/>
+<aop-project name="ShoppingMall2"/>
+<aop-project name="spring_test_member_jdbc"/>
+<aop-project name="spring_6_1"/>
+<aop-project name="spring_5_2"/>
+<aop-project name="spring_mvc_board_mybatis"/>
+<aop-project name="spring_5_1"/>
+<aop-project name="spring_3_2"/>
+<aop-project name="spring_4_1"/>
+<aop-project name="spring_join_resultmap"/>
+<aop-project name="spring_tran"/>
+<aop-project name="spring_test_member_mybatis"/>
+<aop-project name="spring_3_1"/>
+<aop-project name="spring_test_item"/>
+<aop-project name="spring_ex12_4"/>
+<aop-project name="spring_ex12_1A"/>
+<aop-project name="spring_paging_practice"/>
+<aop-project name="spring_15"/>
+<aop-project name="spring_12_4"/>
+<aop-project name="spring_13_3"/>
+<aop-project name="spring_14_2"/>
+<aop-project name="spring_2_1"/>
+<aop-project name="spring_paging2"/>
+<aop-project name="spring_ex12_3"/>
+<aop-project name="spring_mvc_board"/>
+<aop-project name="spring_validation"/>
+<aop-project name="spring_11_11"/>
+<aop-project name="spring_12_3"/>
+<aop-project name="spring_13_2"/>
+<aop-project name="spring_paging1"/>
+<aop-project name="spring_ex12_2"/>
+<aop-project name="spring_12_6"/>
 <aop-project name="spring_ex8_4"/>
 <aop-project name="spring_ex12_1"/>
-<aop-project name="spring_ex2_2"/>
-<aop-project name="spring_ex3_1"/>
 <aop-project name="spring_ex3_9"/>
 <aop-project name="spring_mvc_board_mybatis2"/>
 <aop-project name="spring_test_item_mybatis"/>
@@ -61,22 +86,13 @@
 <aop-project name="spring_12_5"/>
 <aop-project name="spring_13_4"/>
 <aop-project name="spring_14_3"/>
-<aop-project name="spring_8_2_2"/>
-<aop-project name="spring_8_3_1"/>
-<aop-project name="spring_6_2"/>
-<aop-project name="spring_7_1"/>
 <aop-project name="spring_paging3"/>
 <aop-project name="spring_mvc_board_jdbc"/>
 <aop-project name="spring_ex6_5"/>
 <aop-project name="spring_ex8_3"/>
-<aop-project name="spring_test_member_Teacher"/>
-<aop-project name="spring_ex2_1"/>
 <aop-project name="spring_ex3_8"/>
-<aop-project name="spring_test_member_jdbc"/>
 <aop-project name="spring_ex3_10"/>
 <aop-project name="spring_14_1_1"/>
-<aop-project name="spring_5_2"/>
-<aop-project name="spring_6_1"/>
 <aop-project name="spring_ex6_4"/>
 <aop-project name="spring_ex8_2"/>
 <aop-project name="spring_ex9_1">
@@ -109,35 +125,27 @@
 <aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_ex10_1|3:src/main/resources/applicationCTX.xml|7:beans:6|8:graphic:17" bean-file="/spring_ex10_1/src/main/resources/applicationCTX.xml" bean-start-line="17" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_ex10_1/src/main/resources/applicationCTX.xml" source="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{LogAop.java[LogAop~loggerAop~QProceedingJoinPoint;" source-start-line="14" target="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{Graphic.java[Graphic~getGraphicInfo" target-start-line="7"/>
 <aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_ex10_1|3:src/main/resources/applicationCTX.xml|7:beans:6|8:graphic:17" bean-file="/spring_ex10_1/src/main/resources/applicationCTX.xml" bean-start-line="17" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_ex10_1/src/main/resources/applicationCTX.xml" source="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{LogAop.java[LogAop~loggerAop~QProceedingJoinPoint;" source-start-line="14" target="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{Graphic.java[Graphic~getCapRank" target-start-line="17"/>
 <aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_ex10_1|3:src/main/resources/applicationCTX.xml|7:beans:6|8:graphic:17" bean-file="/spring_ex10_1/src/main/resources/applicationCTX.xml" bean-start-line="17" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_ex10_1/src/main/resources/applicationCTX.xml" source="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{LogAop.java[LogAop~loggerAop~QProceedingJoinPoint;" source-start-line="14" target="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{Graphic.java[Graphic~getCompany" target-start-line="11"/>
-<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_ex10_1|3:src/main/resources/applicationCTX.xml|7:beans:6|8:graphic:17" bean-file="/spring_ex10_1/src/main/resources/applicationCTX.xml" bean-start-line="17" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_ex10_1/src/main/resources/applicationCTX.xml" source="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{LogAop.java[LogAop~loggerAop~QProceedingJoinPoint;" source-start-line="14" target="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{Graphic.java[Graphic~setCompany~QString;" target-start-line="14"/>
 <aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_ex10_1|3:src/main/resources/applicationCTX.xml|7:beans:6|8:graphic:17" bean-file="/spring_ex10_1/src/main/resources/applicationCTX.xml" bean-start-line="17" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_ex10_1/src/main/resources/applicationCTX.xml" source="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{LogAop.java[LogAop~loggerAop~QProceedingJoinPoint;" source-start-line="14" target="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{Graphic.java[Graphic~setCapRank~I" target-start-line="20"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_ex10_1|3:src/main/resources/applicationCTX.xml|7:beans:6|8:graphic:17" bean-file="/spring_ex10_1/src/main/resources/applicationCTX.xml" bean-start-line="17" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_ex10_1/src/main/resources/applicationCTX.xml" source="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{LogAop.java[LogAop~loggerAop~QProceedingJoinPoint;" source-start-line="14" target="=spring_ex10_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.lgy.spring_ex10_1{Graphic.java[Graphic~setCompany~QString;" target-start-line="14"/>
 </aspect-definition>
 </aop-project>
 <aop-project name="spring_ex3_7"/>
-<aop-project name="spring_mvc_board_mybatis"/>
 <aop-project name="spring_10_1"/>
 <aop-project name="spring_14_1_2"/>
-<aop-project name="spring_5_1"/>
 <aop-project name="spring_ex6_3"/>
 <aop-project name="spring_ex8_1"/>
 <aop-project name="spring_ex3_6"/>
 <aop-project name="spring_test_member_jdbc_Teacher"/>
+<aop-project name="spring_validation_3rd"/>
 <aop-project name="spring_12_2"/>
 <aop-project name="spring_13_1"/>
-<aop-project name="spring_3_2"/>
-<aop-project name="spring_4_1"/>
-<aop-project name="spring_join_resultmap"/>
 <aop-project name="spring_ex6_2"/>
 <aop-project name="spring_ex3_5"/>
 <aop-project name="spring_test_item_jdbc"/>
-<aop-project name="spring_test_member_mybatis"/>
 <aop-project name="spring_16"/>
 <aop-project name="spring_12_1"/>
-<aop-project name="spring_3_1"/>
+<aop-project name="spring_tran_2nd"/>
 <aop-project name="spring_ex6_1"/>
-<aop-project name="spring_ex12_4"/>
 <aop-project name="spring_ex2_5"/>
 <aop-project name="spring_ex3_4"/>
-<aop-project name="spring_test_item"/>
-<aop-project name="spring_ex12_1A"/>
 </aop-reference-model>

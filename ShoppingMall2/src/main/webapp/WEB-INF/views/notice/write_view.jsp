@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 <style>
 	.box{
-            border: 1px solid black;
+            border: hidden;
             border-collapse: collapse;
         }
 </style>
@@ -33,29 +33,28 @@
 </script>
 </head>
 <body>
-	<table width="500" border="1">
+	<h3 align="center">Notice</h3>
+	<table class="box" width="500" border="1" align="center">
 		<form method="post" action="write">
-			<tr>
-				<td>이름</td>
-				<td>
-					<input type="text" name="notiauth" size="50">
-				</td>
-			</tr>
-			<tr>
+			<tr  align="left">
 				<td>제목</td>
-				<td>
-					<input type="text" name="notititle" size="50">
-				</td>
 			</tr>
 			<tr>
+				<td>
+					<input type="text" name="notititle" size="95">
+				</td>
+			</tr>
+			<tr align="left">
 				<td>내용</td>
+			</tr>
+			<tr>
 				<td>
-					<textarea rows="10" name="noticont"></textarea>
+					<textarea  cols="100" rows="20" name="noticont"></textarea>
 				</td>
 			</tr>
 			<tr>
-				<td colspan="2">
-					<input type="submit" value="입력">
+				<td colspan="2" align="right">
+					<input type="submit" value="Write">
 				</td>
 			</tr>
 		</form>

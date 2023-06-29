@@ -5,43 +5,45 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style>
-	.box{
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-</style>
 </head>
 <body>
-  <h1>제품관리</h1>
-	<table class="box" width="500" border="1">
-		<tr>
-			<td width="50" align="center">번호</td>
-			<td width="90" align="center">제품코드</td>
-			<td width="150" align="center">제품명</td>
-			<td width="90" align="center">이미지</td>
-			<td width="90" align="center">가격</td>
-			<td width="90" align="center">카테고리</td>
-			<td width="90" align="center">수량</td>
-			<td width="90" align="center">등록일</td>
-			<td width="90" align="center">삭제</td>
-		</tr>
-		<c:forEach items="${productlist}" var="dto">
-			<tr>
-				<td>${dto.noticode}</td>
-				<td>
-<!-- 				content_view : 컨트롤러단 호출 -->
-					<a href="content_view?noticode=${dto.noticode}">${dto.notititle}</a>
-				</td>
-				<td>${dto.notiauth}</td>
-				<td>${dto.notidate}</td>
-			</tr>
-		</c:forEach>
-		<tr>
-			<td colspan="5">
-				<a href="write_view">글작성</a>
-			</td>
-		</tr>
-	</table>
+
+    <div class="py-2 text-center">
+        <h3>상품 등록4224225 </h3>
+    </div>
+
+    <!-- 상품 상세 내용-->
+    <div class="text-center">
+        <h5>상품 입력</h5>
+        <form method="post">
+            <div>
+                <label form="itemName">상품명</label>
+                <input type="text" id="itemName" name="itemName" placeholder="이름을 입력하세요">
+            </div>
+            <div>
+                <label form="price">가격</label>
+                <input type="text" id="price" name="price" placeholder="가격을 입력하세요">
+            </div>
+            <div>
+                <label form="quantity">수량</label>
+                <input type="text" id="quantity" name="quantity" placeholder="수량을 입력하세요">
+            </div>
+
+            <hr>
+            <div class="row">
+                <div class="col text-center">
+                    <button class="w-50 btn btn-primary btn-lg"
+                            th:onclick="|location.href='@{/basic/items/add)}'|"
+                            type="submit">상품 등록</button>
+                </div>
+                <div class="col text-center">
+                    <button class="w-50 btn btn-secondary btn-lg"
+                            th:onclick="|location.href='@{/basic/items}'|"
+                            type="button">취소</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div> <!--/container -->
 </body>
 </html>
