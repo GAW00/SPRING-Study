@@ -8,13 +8,14 @@
         select bid, bname, btitle, bcontent, bdate, bhit from mvc_board order by bid
     </select>
     
-    <select id="listWithPaging" resultType="com.lgy.spring_mvc_board_Std.dto.BDto">
+    <select id="listWithPaging" resultType="com.lgy.spring_mvc_board_std.dto.BDto">
     	<![CDATA[
 	    	select bid, bname, btitle, bcontent, bdate, bhit 
 	    	from(
 	    		select rownum rn, bid, bname, btitle, bcontent, bdate, bhit
 	    		from mvc_board
 	    		where rownum <= (#{pageNum} * #{amount})
+	    		order by bid
 	    	)
 	    	where rn > (#{pageNum} - 1) * #{amount}
 	    ]]>

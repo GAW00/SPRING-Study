@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.lgy.spring_mvc_board_std.dto.BDto;
 import com.lgy.spring_mvc_board_std.dto.Criteria;
+import com.lgy.spring_mvc_board_std.dto.PageDTO;
 import com.lgy.spring_mvc_board_std.service.BService;
 
 import lombok.extern.slf4j.Slf4j;
@@ -41,7 +42,11 @@ public class BController {
 		log.info("@# BController.list");
 		log.info("@# cri ===> " + cri);
 		
+		log.info("%%%%%% cri.pageNum = " + cri.getPageNum());
+		log.info("%%%%%% cri.amount = " + cri.getAmount());
+		
 		model.addAttribute("list", service.list(cri));
+		model.addAttribute("pageMaker", new PageDTO(123, cri));
 		
 		return "list";
 	}

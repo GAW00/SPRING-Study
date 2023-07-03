@@ -12,6 +12,7 @@ public class Criteria {
 	private int amount;  // 페이지당 게시글 수
 	
 	public Criteria() {
-		this(1, 10);
+//		this(1, 10);
+		this(5, 10);
 	}
 }
