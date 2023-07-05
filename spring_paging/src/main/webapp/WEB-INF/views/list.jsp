@@ -76,7 +76,9 @@
 		</ul>
 	</div>
 	
-	<form method="get" id="actionForm" action="list">
+<!-- 	<form method="get" id="actionForm" action="list"> -->
+<!-- actionForm.attr 에서 list or content_view 로 submit 해서 action 삭제 -->
+	<form method="get" id="actionForm">
 		<input type="hidden" name="pageNum" value="${pageMaker.cri.pageNum}">
 		<input type="hidden" name="amount" value="${pageMaker.cri.amount}">
 	</form>
@@ -91,9 +93,17 @@
 // 		기본 동작 막음: 페이지 링크를 통해서 이동
 		e.preventDefault();
 // 		console.log("click~!!!");
+
+// 		게시글 클릭후 뒤로가기 누를때 &bid=번호 계속 누적되는거 방지
+		var bno = actionForm.find("input[name='bid']").val();
+		if (bno != '') {
+			actionForm.find("input[name='bid']").remove();
+		}
+
 		console.log("@# href ===>"+$(this).attr("href"));
 		actionForm.find("input[name='pageNum']").val($(this).attr("href"));
-		actionForm.submit();
+// 		actionForm.submit();
+		actionForm.attr("action", "list").submit();
 	});
 	
 // 	게시글 처리
