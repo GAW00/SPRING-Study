@@ -30,7 +30,8 @@
 <%-- 				<td>${dto.btitle}</td> --%>
 				<td>
 <!-- 			content_view : 컨트롤러단 호출 -->
-					<a href="content_view?bid=${dto.bid}">${dto.btitle}</a>
+<%-- 					<a href="content_view?bid=${dto.bid}">${dto.btitle}</a> --%>
+					<a class="move_link" href="${dto.bid}">${dto.btitle}</a>
 				</td>
 				<td>${dto.bdate}</td>
 				<td>${dto.bhit}</td>
@@ -89,6 +90,7 @@
 <script>
 	var actionForm = $("#actionForm");
 	
+// 	<<페이지 번호 처리>>
 	$(".paginate_button a").on("click", function(e){
 // 		기본 동작 막음 : 페이지 링크 통해서 이동
 		e.preventDefault();
@@ -96,6 +98,15 @@
 		console.log("@# href ===> " + $(this).attr("href"));
 		actionForm.find("input[name='pageNum']").val($(this).attr("href"));
 		actionForm.submit();
+	});
+	
+// 	<<게시글 처리>>
+	$(".move_link").on("click", function(e){
+		e.preventDefault();
+		var targetBno = $(this).attr("href");
+// 		line33 의 content_view?bid=${dto.bid}에 있는 ?bid= 의 bid 와 name 을 매칭
+		actionForm.append("<input type='hidden' name='bid' value='"+targetBno+"'>")
+		actionForm.attr("action", "content_view").submit();
 	});
 </script>
 
