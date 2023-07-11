@@ -32,7 +32,7 @@
 		<level value="info" />
 	</logger>
 
-	<!-- SQL 로그 출력을 위한 설정 추가 시작 -->
+<!-- SQL 로그 출력을 위한 설정 추가 시작 -->
 	<logger name="jdbc.sqlonly" additivity="false"> 
 		<level value="info"/> 
 		<appender-ref ref="console"/> 
@@ -55,7 +55,7 @@
 		<level value="info"/>  
 		<appender-ref ref="console"/> 
 	</logger> 
-	<!-- SQL 로그 출력을 위한 설정 추가 끝 -->
+<!-- SQL 로그 출력을 위한 설정 추가 끝 -->
 
 	<!-- Root Logger -->
 	<root>

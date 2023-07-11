@@ -97,12 +97,12 @@ public class BServiceImpl implements BService{
 	}
 
 	@Override
-	public int getTotalCount() {
+	public int getTotalCount(Criteria cri) {
 		log.info("@# BServiceImpl.getTotalCount()");
 		
 		IBDao dao = sqlSession.getMapper(IBDao.class);
 		
-		return dao.getTotalCount();
+		return dao.getTotalCount(cri);
 	}
 
 }

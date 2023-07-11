@@ -42,7 +42,8 @@ public class BController {
 //		ArrayList<BDto> list = service.list();
 //		model.addAttribute("list", list);
 		model.addAttribute("list", service.list(cri));
-		int total = service.getTotalCount();
+//		int total = service.getTotalCount();
+		int total = service.getTotalCount(cri);
 		log.info("@# total===>"+total);
 		
 //		model.addAttribute("pageMaker", new PageDTO(123, cri));

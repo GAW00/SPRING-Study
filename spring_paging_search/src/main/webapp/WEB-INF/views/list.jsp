@@ -50,10 +50,10 @@
 			<option value="TW" <c:out value="${pageMaker.cri.type eq 'TW'?'selected':''}"/>>제목 or 작성자</option>
 			<option value="TCW" <c:out value="${pageMaker.cri.type eq 'TCW'?'selected':''}"/>>제목 or 내용 or 작성자</option>
 		</select>
+<!-- 	Criteria 를 이용해서 키워드 값을 넘김 -->
 		<input type="text" name="keyword" value='<c:out value="${pageMaker.cri.keyword}"></c:out>'>
 		<button>Search</button>
 	</form>
-	
 	
 	<h3>${pageMaker}</h3>
 	
@@ -96,8 +96,10 @@
 	<form method="get" id="actionForm">
 		<input type="hidden" name="pageNum" value="${pageMaker.cri.pageNum}">
 		<input type="hidden" name="amount" value="${pageMaker.cri.amount}">
-		<input type="hidden" name="type" value='<c:out value="${pageMaker.cri.type}"/>'>
-		<input type="hidden" name="keyword" value='<c:out value="${pageMaker.cri.keyword}"/>'>
+<%-- 		<input type='hidden' name='type' value='<c:out value="${ pageMaker.cri.type }"/>'>  --%>
+<%-- 		<input type='hidden' name='keyword' value='<c:out value="${ pageMaker.cri.keyword }"/>'> --%>
+		<input type='hidden' name='type' value="${ pageMaker.cri.type }"> 
+		<input type='hidden' name='keyword' value="${ pageMaker.cri.keyword }">
 	</form>
 </body>
 </html>
@@ -110,17 +112,18 @@
 // 		기본 동작 막음: 페이지 링크를 통해서 이동
 		e.preventDefault();
 // 		console.log("click~!!!");
-
+		
 // 		게시글 클릭후 뒤로가기 누를때 &bid=번호 계속 누적되는거 방지
 		var bno = actionForm.find("input[name='bid']").val();
 		if (bno != '') {
 			actionForm.find("input[name='bid']").remove();
 		}
-
+		
 		console.log("@# href ===>"+$(this).attr("href"));
 		actionForm.find("input[name='pageNum']").val($(this).attr("href"));
 // 		actionForm.submit();
-		actionForm.attr("action", "list").submit();
+// 		게시글 클릭후 뒤로가기 누를때 content_view 찾아가는거 방지
+		actionForm.attr("action","list").submit();
 	});
 	
 // 	게시글 처리
@@ -129,7 +132,8 @@
 		var targetBno = $(this).attr("href");
 // 		console.log("move click~!!!");
 // 		console.log("@# href ===>"+$(this).attr("href"));
-
+		
+		history.replaceState({}, null, null);
 // 		게시글 클릭후 뒤로가기 누를때 &bid=번호 계속 누적되는거 방지
 		var bno = actionForm.find("input[name='bid']").val();
 		if (bno != '') {
@@ -146,11 +150,11 @@
 	
 	var searchForm = $("#searchForm");
 	
-// 	search 버튼 클릭 시 동작
+// 	Search 버튼 클릭
 	$("#searchForm button").on("click",function(){
 // 		validation check
 		if(!searchForm.find("option:selected").val()){
-			alert("검색 종류를 선택하세요");
+			alert("검색종류를 선택하세요");
 			return false;
 		}
 		if(!searchForm.find("input[name='keyword']").val()){
