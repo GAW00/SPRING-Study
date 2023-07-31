@@ -5,8 +5,8 @@
 <aop-project name="spring_ex3_3"/>
 <aop-project name="spring_ex2_4"/>
 <aop-project name="spring_paging"/>
-<aop-project name="spring_6_4"/>
 <aop-project name="spring_7_3"/>
+<aop-project name="spring_6_4"/>
 <aop-project name="spring_test_item_std"/>
 <aop-project name="spring_9_1">
 <aspect-definition advice-class-name="com.lgy.spring_9_1.LogAop" advice-method-name="loggerAop" advice-type="AROUND" aspect-end-line-number="13" aspect-name="logAop" aspect-start-line-number="13" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/spring_9_1/src/main/resources/applicationCTX.xml" pointcut-expression="within(com.lgy.spring_9_1.*)" proxy-target-class="false">
@@ -33,6 +33,7 @@
 <aop-project name="boot_gradle_01"/>
 <aop-project name="ShoppingMall"/>
 <aop-project name="spring_mvc_board_std"/>
+<aop-project name="boot_item"/>
 <aop-project name="spring_8_2_1"/>
 <aop-project name="spring_7_2"/>
 <aop-project name="spring_6_3"/>
@@ -61,6 +62,7 @@
 <aop-project name="spring_tran"/>
 <aop-project name="spring_test_member_mybatis"/>
 <aop-project name="spring_3_1"/>
+<aop-project name="boot_member"/>
 <aop-project name="spring_test_item"/>
 <aop-project name="spring_ex12_4"/>
 <aop-project name="spring_ex12_1A"/>
@@ -88,6 +90,7 @@
 <aop-project name="spring_ex8_4"/>
 <aop-project name="spring_ex12_1"/>
 <aop-project name="spring_ex3_9"/>
+<aop-project name="spring_paging_search"/>
 <aop-project name="spring_mvc_board_mybatis2"/>
 <aop-project name="spring_test_item_mybatis"/>
 <aop-project name="spring_test_member"/>
