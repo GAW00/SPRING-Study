@@ -61,7 +61,6 @@ INDEX VERSION 1.131+D:\Dev\sts-bundle\work_spring\.metadata\.plugins\org.eclipse
 2633404638.index
 1801151095.index
 3281682495.index
-798806123.index
 1703084827.index
 4005456476.index
 2561434059.index
